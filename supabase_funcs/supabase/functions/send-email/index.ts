@@ -36,7 +36,7 @@ serve(async (req: Request) => {
       sender: { email: SENDER_EMAIL, name: "Mutts in the 6ix" },
       to: [{ email, name }],
       subject: "Thank You!",
-      htmlContent: `<p>Hi <span style="color:lightpurple">${name}</span>, thank you for signing the Mutts In The 6ix waiver form! We hope you and your dog have a great time at our event!</p><br><p>We'd love to hear your feedback on the event, please fill out this <a href="https://forms.gle/LzvaJ7UYywM7pwMx7">feedback form</a>!</p>`,
+      htmlContent: `<p>Hi <span style="color:lightpurple">${name}</span>, thank you for signing the Mutts In The 6ix waiver form! We hope you and your dog have a great time at our event!</p><br><p>We'd love to hear your feedback on the event, please fill out this <a href="https://forms.gle/LzvaJ7UYywM7pwMx7">feedback form</a>!</p><br><p>We'll see you at the event!</p>`,
     };
 
     console.log("Email data prepared.", emailData);
