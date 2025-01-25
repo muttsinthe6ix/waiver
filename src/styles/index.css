@@ -26,7 +26,7 @@ html, body, #root {
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #8C81BD;
   text-decoration: inherit;
 }
 a:hover {
@@ -50,7 +50,7 @@ button {
   border-radius: 50px; /* or use rounded-full in Tailwind */
   padding: 0.8em 1.5em;
   font-size: 1em;
-  background-color: #9333ea;
+  background-color:#8C81BD;
   color: white;
   cursor: pointer;
   transition: all 0.25s ease-in-out;

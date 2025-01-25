@@ -54,9 +54,11 @@ const WaiverForm: FC<WaiverFormProps> = ({ onSubmitSuccess }) => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="border-4 border-black p-[24px] rounded-[32px]"
+      className="border-4 border-black p-[18px] rounded-[32px]"
     >
-      <h1 className="text-2xl font-bold text-center mb-6 text-black">Submit Your Entry</h1>
+      <h1 className="text-2xl font-bold text-center mb-6 text-black">
+        Submit Your Entry
+      </h1>
       <FormInput
         id="name"
         label="Name*"

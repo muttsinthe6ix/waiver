@@ -11,7 +11,7 @@ const SuccessMessage: React.FC = () => (
       Your waiver has been successfully submitted.
     </p>
   </div>
-)
+);
 
 const App: React.FC = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -21,9 +21,9 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen flex justify-center bg-gradient-to-br from-purple-500 via-purple-600 to-purple-700 p-3">
+    <div className="min-h-screen flex justify-center bg-purple p-3">
       <div className="bg-white shadow-glossy p-6 max-w-full w-[960px] border-4 border-black p-[34px] rounded-[32px]">
-        <h1 className="font-bold text-purple-700 text-center mb-6">
+        <h1 className="font-bold text-purple text-center mb-6">
           Mutts in the 6ix Waiver
         </h1>
         <LiabilityFormText />
