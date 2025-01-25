@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import LiabilityFormText from "./LiabilityFormText";
 import WaiverForm from "./WaiverForm";
 
@@ -15,6 +15,13 @@ const SuccessMessage: React.FC = () => (
 
 const App: React.FC = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
+
+  useEffect(() => {
+    const formSubmitted = localStorage.getItem("formSubmitted");
+    if (formSubmitted === "true") {
+      setIsSubmitted(true);
+    }
+  }, []);
 
   const handleFormSubmitSuccess = () => {
     setIsSubmitted(true);

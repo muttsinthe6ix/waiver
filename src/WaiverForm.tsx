@@ -43,6 +43,7 @@ const WaiverForm: FC<WaiverFormProps> = ({ onSubmitSuccess }) => {
         .insert([{ name, signature, dog_name: dogName, email }]);
       if (error) throw error;
       onSubmitSuccess(); // Call the callback function
+      localStorage.setItem("formSubmitted", "true");
     } catch (error) {
       console.error("Error submitting form:", error);
       alert("Error submitting the form.");
